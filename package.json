@@ -1,0 +1,66 @@
+{
+  "name": "@tiaanduplessis/react-resize",
+  "version": "1.0.0",
+  "description": "Little resize listener component",
+  "main": "dist/react-resize.js",
+  "unpkg": "dist/react-resize.umd.js",
+  "module": "dist/react-resize.mjs",
+  "source": "src/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "postversion": "npm publish",
+    "preversion": "npm run test",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "lint": "standard --fix",
+    "coverage": "jest --coverage",
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaanduplessis/react-resize.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "resize",
+    "breakpoint"
+  ],
+  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/react-resize/issues"
+  },
+  "homepage": "https://github.com/tiaanduplessis/react-resize#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "7.5.0",
+    "@babel/preset-env": "7.5.4",
+    "@babel/preset-react": "7.0.0",
+    "@testing-library/react": "^8.0.4",
+    "babel-eslint": "10.0.2",
+    "babel-jest": "24.8.0",
+    "babel-polyfill": "6.26.0",
+    "jest": "24.8.0",
+    "microbundle": "0.11.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "standard": "12.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": "dist",
+    "env": {
+      "jest": true,
+      "browser": true
+    }
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  }
+}
