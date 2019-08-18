@@ -58,4 +58,4 @@ $ yarn add @tiaanduplessis/react-resize
 
 ## License
 
-MIT © [[object Object]]([object Object])
+MIT © Tiaan du Plessis
