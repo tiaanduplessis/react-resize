@@ -36,9 +36,9 @@
   },
   "homepage": "https://github.com/tiaanduplessis/react-resize#readme",
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-react": "7.0.0",
+    "@babel/plugin-proposal-class-properties": "7.7.0",
+    "@babel/preset-env": "7.7.1",
+    "@babel/preset-react": "7.7.0",
     "@testing-library/react": "8.0.9",
     "babel-eslint": "10.0.3",
     "babel-jest": "24.9.0",
